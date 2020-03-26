@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS | Password Generator</title>
+  <title>JS | Acquisto Biglietto</title>
   <!-- MAIN stylesheet -->
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Media Query stylesheet -->
@@ -14,14 +14,47 @@
 </head>
 <body>
  
-  <h1>Costo al KM <span id="costoKM"></span></h1>
-  <h1>La tua età <span id="utAge"></span></h1>
-  <h1>I tuoi KM <span id="utKM"></span></h1>
+  <div class="app u-flexColumn">
+    <div class="app__top">
+      <h1>IL TUO BIGLIETTO</h1>
+      <h4>Grazie per l'acquisto!</h4>
+      <h4>Sotto puoi stampare il biglietto.</h4>
+    </div>
+    <div class="box">
+      <div class="box__img u-flexColumn">
+        <div class="wrapper-img">
+          <img src="assets/img/profile-img.jpg" alt="">
+        </div>
+        <h2>Matt</h2>
+      </div>
+      <div class="box__txt u-flexColumn">
+        <div class="txt__dati u-flex">
+          <div class="">
+            <h2>Costo/km</h2>
+            <h3 id="costoKM"></h3>
+          </div>
+          <div class="">
+            <h2>Età</h2>
+            <h3 id="utAge"></h3>
+          </div>
+          <div class="">
+            <h2>Km viaggio</h2>         
+            <h3 id="utKM"></h3>
+          </div>    
+        </div>
+        <div class="txt__totale">
+          <h2>Totale: <span id="totaleParz"></span>€</h2>
+          <h2>Sconto: <span id="sconto"></span></h2>
+          <h2>Totale: <span id="totale"></span>€</h2>
+        </div>
+      </div>  
+    </div>
+    <div class="app__bottom">
+      <a onclick="stampaTicket()">Stampa</a>
+    </div>
+    
+  </div>
   
-  <h1>Totale: <span id="totaleParz"></span></h1>
-  <h1>Sconto Applicato = <span id="sconto"></span> </h1>
-  <h1>Totale: <span id="totale"></span></h1>
-     
     
 
   <!-- JS -->

@@ -8,7 +8,7 @@ var costoKM = 0.21;
 var utKM = parseInt(prompt('Inserire km da percorrere', 100));
 var utAge = parseInt(prompt('Inserire età', 16));
 
-document.getElementById('costoKM').innerHTML = costoKM;
+document.getElementById('costoKM').innerHTML = costoKM + "€";
 document.getElementById('utKM').innerHTML = utKM;
 document.getElementById('utAge').innerHTML = utAge;
 
@@ -17,7 +17,7 @@ console.log('Km utente ' + utKM);
 console.log('Età utente ' + utAge);
 
 var totale = costoKM * utKM;
-var totaleParz = totale;
+var totaleParz = totale.toFixed(2);
 console.log('Totale costo senza sconti ' + totaleParz);
 
 document.getElementById('totaleParz').innerHTML = totaleParz;
@@ -47,8 +47,14 @@ if (utAge < 18) {
   console.log('Nessun Sconto applicabile');
 }
 
-document.getElementById('totale').innerHTML = totale;
+document.getElementById('totale').innerHTML = totale.toFixed(2);
 console.log(totale);
+
+// Funzione per Stampa Biglietto
+
+function stampaTicket() {
+  window.print();
+}
 
 
 

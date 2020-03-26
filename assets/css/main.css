@@ -6,8 +6,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: rgb(39, 39, 39);
+  color: #fff;
   font-size: 14px;
+  
 }
 
 .u-flex {
@@ -21,6 +22,114 @@ body {
 
 .app {
   height: 100vh;
+  padding: 20px;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(45deg, #ff3984, #ff2381);
+}
+
+.app__top {
+  padding: 15px;
+  text-align: center;
+}
+
+.app__top h1 {
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.app__top h4 {
+  font-weight: 400;
+}
+
+.box {
+  max-height: 540px;
+  width: 310px;
+  flex-grow: 1;
+  padding: 20px;
+  background: #fff;
+  color: #222;
+  border-radius: 35px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+
+
+.txt__dati h3 {
+ font-size: 11px;
+ background: rgb(209, 209, 209);
+ margin-top: 5px;
+ padding: 5px;
+ border-radius: 5px;
+} 
+
+.box__img {
+  min-height: 240px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box__img h2 {
+  margin-top: 15px;
+}
+
+.wrapper-img {
+  height: 150px;
+  width: 150px;
+  border: 6px solid #ff2381;
+  border-radius: 50%;
+}
+
+.wrapper-img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.box__txt {
+  min-height: 260px;
+}
+
+.txt__dati {
+  padding: 15px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.txt__dati h2 {
+  font-size: 13px;
+}
+
+.txt__totale {
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.txt__totale h2 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.txt__totale h2:last-child {
+  padding-top: 10px;
+  border-top: 1px solid #222;
+  font-size: 16px;
+}
+
+.txt__totale span {
+
+}
+
+.app__bottom {
+  margin-top: 50px;
+}
+
+.app__bottom a {
+  padding: 10px 30px;
+  background: linear-gradient(45deg, #fff, #ccc);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ff2381;
+  font-size: 20px;
+  font-weight: 700;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
 }
